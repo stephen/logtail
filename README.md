@@ -1,4 +1,6 @@
 # logtail
+[![Go Report Card](https://goreportcard.com/badge/github.com/czyt/logtail)](https://goreportcard.com/report/github.com/czyt/logtail)
+
 logtail client for go
 
 Collect logs directly from your go applications.Port from [official .net client](https://github.com/logtail/logtail-dotnet)
