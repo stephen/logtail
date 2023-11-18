@@ -1,3 +1,3 @@
-module github.com/tiny-lib/logtail
+module github.com/stephen/logtail
 
 go 1.18
