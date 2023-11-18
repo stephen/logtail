@@ -42,7 +42,7 @@ func (c Client) Send(payload any) (n int, err error) {
 func (c Client) Write(body []byte) (n int, err error) {
 	request, _ := http.NewRequest(http.MethodPost, c.server, bytes.NewBuffer(body))
 	request.Header.Set("Content-Type", string(c.defaultContentType))
-	request.Header.Set("Authorization", c.authToken)
+	request.Header.Set("Authorization", fmt.Sprintf("Bearer %s", c.authToken))
 
 	response, err := c.httpClient.Do(request)
 	if err != nil {
